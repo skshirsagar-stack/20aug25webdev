@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+          --border:2px solid red;
+        }
+      p{
+        --light:lightblu;
+          border: var(--border);
+          color:var(--light,pink)
+      }
+       span{
+          border: var(--border);
+          color:var(--light)
+      }
+      #div1{
+        border: var(--border);
+      }
+     
+    </style>
+</head>
+<body>
+    <p>Hello</p>
+    <div>hello3</div>
+    <div id="div1">gdgad</div>
+    <span>hello</span>
+    <br/>
+     <br/>
+    
+</body>
+</html>

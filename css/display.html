@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+       #flex-ch1{
+        /* height: 400px; */
+        border: 2px solid green;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap-reverse;
+         /* flex-direction:row-reverse; */
+         /* flex-direction: column; */
+         /* flex-direction: column-reverse; */
+         /* justify-content:flex-start; */
+         /* justify-content:flex-end; */
+          /* justify-content:space-around; */
+         /* justify-content:space-between; */
+         gap: 20px;
+         /* align-items:flex-start; */
+         /* align-items:center; */
+         align-items: flex-start;
+       }
+    </style>
+  </head>
+  <body>
+    <div id="block">
+      <span>hello1</span>
+      <span style="display: block; width: 200px; border: 2px solid black"
+        >hello2</span
+      >
+    </div>
+    <br />
+    <br />
+    <br />
+    <div id="inline">
+      <span>hello1</span>
+      <div style="display: inline; border: 2px solid red; width: 200px">
+        Hello2
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div id="inline-block">
+      <span>hello1</span>
+      <div style="display: inline-block; border: 2px solid red; width: 200px">
+        Hello2
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div id="none">
+      <span style="display: none">hello1</span>
+      <div style="display: inline-block; border: 2px solid red; width: 200px">
+        Hello2
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div id="flex">
+      <span style="display: none">flex</span>
+      <div id="flex-ch1">
+        <div style="width: 100px; height: 100px; border: 2px solid yellow; visibility: hidden;">
+          box1
+        </div>
+        <div style="width: 100px; height: 100px; border: 2px solid yellow">
+          box2
+        </div>
+        <div style="width: 100px; height: 100px; border: 2px solid yellow">
+          box3
+        </div>
+        <div style="width: 100px; height: 100px; border: 2px solid yellow; cursor:grab;">
+          box4
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div style="font-size: 30px; opacity: 0.4; cursor: pointer;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis minima expedita libero dignissimos? Quae dolores ut soluta officia ea nihil!
+    </div>
+    <br />
+    <br />
+    <br />
+  </body>
+</html>

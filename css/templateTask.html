@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        }
+      .container {
+        margin: 0px 150px;
+      }
+      .line{
+        height: 1px;
+        background-color: rgb(228, 226, 226);
+      }
+      .header-1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px;
+       
+      }
+      .heade-1-sec-1{
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .heade-1-sec-2{
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .header-2{
+        padding: 20px 0px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .header-2-sec-1 span{
+   font-weight: bold;
+   font-size: 25px;
+      }
+      .header-2-sec-2{
+        display: flex;
+        justify-content: space-between;
+       align-items:center;
+       width: 450px;
+      }
+      .header-2-sec-2 a{
+        text-decoration: none;
+        color: #a5a4a4;
+        font-size: 20px;
+      }
+       .header-2-sec-2 a:hover{
+        color:rgb(75, 75, 185)
+       }
+       .hero-section{
+        background-image: url(./assets/img/download5.jpg);
+        background-size:cover;
+        height: 600px;
+       }
+        .hero-section div{
+            text-align: center;
+            margin: 0px auto;
+            color: aliceblue;
+            padding: 150px;
+        }
+         .hero-section div span{
+            font-size: 30px;
+         }
+         .hero-section div p{
+            font-size: 80px;
+            font-weight:normal;
+         }
+         .hero-section div button{
+            margin-top: 50px;
+            padding: 10px 20px;
+            background-color: rgb(6, 189, 250);
+            color: white;
+            border: none;
+            font-size: 20px;
+            border-radius: 5px;
+
+         }
+    </style>
+  </head>
+  <body>
+    <header >
+      <div class="container header-1 ">
+        <div class="heade-1-sec-1"><span>@ abc@gmail.com</span><span>@ 12345678990</span></div>
+        <div class="heade-1-sec-2"><span>@</span>|<span>@</span>|<span>@</span>|<span>@</span></div>
+      </div>
+      <div class="line"></div>
+      <div class="header-2 container">
+        <div class="header-2-sec-1"><span>Rave</span><span style="color: blue">Tive</span></div>
+        <nav class="header-2-sec-2">
+          <a href="#">Home</a>
+          <a href="#">Aboute</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+          <a href="#">Project</a>
+          <a href="#">News</a>
+        </nav>
+      </div>
+    </header>
+    <section class="hero-section">
+        <div>
+         <span>Lorem ipsum dolor sit amet consectetur.</span>
+         <p>Lorem ipsum dolor sit amet consectetur.</p>
+         <button>Read more</button>
+         </div>
+    </section>
+  </body>
+</html>

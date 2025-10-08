@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ch1{
+            margin: 100px;
+             height: 100px;
+            width: 100px;
+            border: 2px solid red;
+            
+            transition-property: transform, margin-left;
+            transition-duration: 1s,1s;
+            transition-timing-function: linear,linear;
+            transition-delay: 0s,0s;
+            
+        }
+        #ch1:hover{
+            transform: rotate(360deg);
+            margin-left: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="ch1">ch1</div>
+</body>
+</html>

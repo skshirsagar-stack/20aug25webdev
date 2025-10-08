@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+      }
+      #menu{
+        display: none;
+      }
+      /* using max width */
+      /* @media (max-width: 1200px) {
+        .box {
+          background-color: yellow;
+        }
+      }
+      @media (max-width: 767px) {
+        .box {
+          background-color: aquamarine;
+        }
+      }
+      @media (max-width: 300px) {
+        .box {
+          background-color: green;
+        }
+      } */
+      /* using min width */
+      @media (min-width: 300px) {
+        .box {
+          background-color: yellow;
+        }
+          #menu{
+          display: block;
+        }
+        #nav{
+          display: none;
+        }
+      }
+      @media (min-width: 700px) {
+        .box {
+          background-color: aquamarine;
+        }
+        #menu{
+          display: block;
+        }
+        #nav{
+          display: none;
+        }
+      }
+      @media (min-width: 1200px) {
+        .box {
+          background-color: green;
+        }
+         #nav{
+          display:block;
+        }
+         #menu{
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div><nav id="nav">nav</nav><button id="menu">Menu</button></div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 50px 200px 150px 150px;
+
+            gap: 10px;
+        }
+        .item{
+            padding: 10px;
+            background-color: rgb(100, 99, 99);
+        }
+        .item1{
+            grid-column: 1/4;
+        }
+        .item2{
+            grid-column: 4/13;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-row: 30px;
+            background-color: white;
+        }
+        .navi{
+            padding: 5px;
+            background-color:  rgb(100, 99, 99);;
+            border-right: 1px solid black;
+            text-align: center;
+        }
+        .item3{
+            grid-column: 1/13;
+        }
+        .item4{
+             grid-column:1/5
+        }
+        .item5{
+            grid-column: 5/9;
+        }
+        .item6{
+            grid-column: 9/13;
+        }
+        .item7{
+            grid-column: 1/10;
+        }
+        .item8{
+            grid-column: 10/13;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+       <div class="item item1">item 1</div>
+       <div class="item item2">
+        <div class="navi">nav1</div>
+        <div class="navi">nav2</div>
+        <div class="navi">nav3</div>
+        <div class="navi">nav4</div>
+        <div class="navi">nav5</div>
+        <div class="navi">nav6</div>
+        <div class="navi">nav7</div>
+       </div>
+       <div class="item item3">item 3</div>
+       <div class="item item4">item 4</div>
+       <div class="item item5">item 5</div>
+       <div class="item item6">item 6</div>
+       <div class="item item7">item 7</div>
+       <div class="item item8">item 8</div>
+      
+    </div>
+</body>
+</html>

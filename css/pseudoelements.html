@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+     p::before{
+      content: 'hello';
+      display: block;
+      border: 1px solid red;
+    }
+    p::after{
+      content: 'hello2';
+    }
+    h1::after{
+      content: '';
+      display: block;
+      height: 2px;
+      width: 0px;
+      background-color: brown;
+      transition:width 1s ease-in-out;
+    }
+    h1:hover::after{
+   width: 300px;
+    } 
+    #first-letter::first-letter{
+      color:red
+    }
+    .first-line::first-line{
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <p>Lorem, ipsum dolor.</p>
+  <h1>Lorem, ipsum dolor.</h1>
+  <p id="first-letter">Lorem, ipsum dolor.</p>
+  <p  class="first-line">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nesciunt blanditiis dignissimos magnam dolore, minima at, ab perferendis et, doloremque nam in. Eos ipsam odio dolore nemo qui fugit possimus necessitatibus sapiente, quidem non voluptate itaque debitis fuga voluptatem reprehenderit autem enim totam rem laborum ipsa! Qui itaque, assumenda consequuntur sit aspernatur minima reprehenderit repudiandae placeat rem et pariatur cumque repellendus beatae iusto fugiat quos a culpa debitis odit in officia eaque id accusantium. Blanditiis veniam fugit temporibus error mollitia exercitationem cupiditate non aliquid adipisci facilis fuga perspiciatis, molestias deleniti dolore nam odit nostrum soluta laboriosam. Rerum placeat sint ut quas consectetur perspiciatis non doloremque facere rem accusamus provident velit molestias, vero consequatur nesciunt error ipsum? Nostrum aliquid at culpa aliquam consequatur perspiciatis. Reiciendis delectus quas corrupti molestiae dolorem perferendis dignissimos qui explicabo reprehenderit omnis distinctio a id veritatis ratione earum voluptates dolor mollitia numquam quis, quos, fugiat aspernatur ex. Saepe ea corporis fugiat natus consectetur delectus id, aliquid, ab ex aperiam nisi minima. Obcaecati, expedita ut quo perferendis recusandae minus ipsum ratione veritatis id nobis eum ipsam culpa ducimus? Commodi dicta assumenda, saepe maiores blanditiis cum neque, sapiente libero vero molestiae ipsam, natus quos dolor laboriosam optio inventore fugit debitis consequuntur corporis eum placeat! Nesciunt architecto vero et odit aspernatur id provident eius, dolorum sequi tenetur rerum! Eius blanditiis consectetur tempora magnam unde provident? Nobis at ullam corporis libero asperiores ut rem eligendi consequuntur ducimus alias sunt molestias similique aspernatur ipsam numquam commodi vel doloribus fuga excepturi soluta, magnam dicta aliquam nostrum dolorum. Voluptatum, itaque necessitatibus ducimus deserunt vel ab sit dicta illum cupiditate repellendus doloribus rem neque similique sint? Natus officia aliquam deleniti labore nisi voluptatibus veniam inventore incidunt harum odit. Cum porro dolore dolores odio vero quis, vitae aperiam consequuntur incidunt esse saepe temporibus deserunt, accusantium ab!</p>
+</body>
+</html>
