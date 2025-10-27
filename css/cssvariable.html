@@ -6,30 +6,30 @@
     <title>Document</title>
     <style>
         :root{
-          --border:2px solid red;
+            --cr:blue;
+            background-color: aqua;
+            --br:1px solid red;
         }
-      p{
-        --light:lightblu;
-          border: var(--border);
-          color:var(--light,pink)
-      }
-       span{
-          border: var(--border);
-          color:var(--light)
-      }
-      #div1{
-        border: var(--border);
-      }
-     
+       #ch1{
+        --local:green;
+        color:var(--cr);
+       }
+
+       #ch2{
+        color:var(--cr);
+        border: var(--br);
+
+       }
+
+       #ch3{
+        color:var(--cr);
+        
+       }
     </style>
 </head>
 <body>
-    <p>Hello</p>
-    <div>hello3</div>
-    <div id="div1">gdgad</div>
-    <span>hello</span>
-    <br/>
-     <br/>
-    
+    <p id="ch1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, illum?</p>
+    <div id="ch2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus recusandae debitis officiis? Eos quidem adipisci vitae maiores et dolore necessitatibus!</div>
+    <span id="ch3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, perferendis?</span>
 </body>
 </html>
