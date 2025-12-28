@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active{
+            height: 200px;
+            width: 200px;
+            background-color: lightblue;
+            font-weight: 700;
+        }
+        .dark{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Element Creation & Removal || Class and Style Manipulation</h1>
+
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+    </ul>
+
+    <div id="container">container</div>
+    <button onclick="addClass()">Add Class</button>
+     <button onclick="removeCLass()">Remove Class</button>
+     <button onclick="toggleClass()">Toggle Dark Mode</button>
+     <button onclick="checkClass()">Check Active</button>
+     <button onclick="changeStyle()">Change Style</button>
+    <script>
+
+        const list = document.querySelector("ul");
+// Element Creation & Removal
+        // const listItem = document.createElement("li");
+        // listItem.innerText = "Mango";
+
+        // list.appendChild(listItem);
+
+        // list.removeChild(list.children[0]);
+            
+        //   const newItem = document.createElement("li");
+        //      newItem.innerText = "Grapes";
+        //  list.replaceChild(newItem, list.children[0]);
+
+
+        //     const newItem = document.createElement("li");
+        //      newItem.innerText = "Grapes";
+        // list.insertBefore(newItem,list.children[1]);
+
+        //list.children[1].remove();
+
+        // Class and Style Manipulation
+
+        const container=document.getElementById("container");
+
+        const addClass=()=>{
+            container.classList.add("active");
+        }
+        const removeCLass=()=>{
+            container.classList.remove("active");
+        }
+
+        const toggleClass=()=>{
+            container.classList.toggle("dark");
+        }
+
+        const checkClass=()=>{
+
+            if(container.classList.contains("active")){
+                alert("Box is active!");
+            }else{
+                alert("Box is NOT active.");
+            }
+        }
+
+        const changeStyle=()=>{
+            container.style.height="150px";
+            container.style.width="150px";
+            container.style.backgroundColor="yellow";
+            container.style.fontWeight="900";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Spread & Rest Operators</h1>
+    <script>
+
+        //Spread
+        // const arr1=[1,2,3,4,5,6,7,8];
+        // const arr2=[11,12,13,...arr1,14,15,16];
+        // console.log("arr2",arr2);
+
+        // const obj1={name:"Rahu",age:23}
+        // const obj2={...obj1,std:"8th",city:"pune"}
+        // console.log(obj2);
+
+        //Rest
+
+        // const fun=(var1,var2,var3,var4,var5)=>{
+        //     console.log("fun",var1,var2,var3,var4,var5);
+        // }
+        const fun=(...var1)=>{
+            console.log("fun",var1[2]);
+        }
+        fun(2,5,"rahul",{name:"rohit"},[1,2,3,4]);
+
+
+        const arr=["rahul","sagar","rohit","ganesh"];
+
+           const [...value]=arr
+
+           console.log(value)
+
+    </script>
+</body>
+</html>

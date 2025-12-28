@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mouse {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Events</h1>
+    <button id="myButton">Click Me</button>
+
+    <input type="text" id="myInput" placeholder="Type something">
+
+    <form id="myForm" novalidate>
+        <input type="text" id="formInput" name="name" placeholder="Type to submit">
+        <input type="email" name="email" placeholder="Email">
+        <button type="submit">Submit Form</button>
+    </form>
+<div class="mouse">
+To see mouseover and mouseout events in action.
+</div>
+    <script>
+        const button = document.getElementById("myButton");
+
+        // click listener
+        button.addEventListener("click", function() {
+           console.log("Button was clicked!");
+        });
+
+        //change listener
+        const input = document.getElementById("myInput");
+        input.addEventListener("change", function() {
+            console.log(`Input changed to: ${input.value}`);
+        });
+
+        //input listener
+        input.addEventListener("input", function() {
+            console.log(`Input event: ${input.value}`);
+        });
+
+        //keydown listener
+        // let body = document.querySelector("body");
+        // body.addEventListener("keydown", function(event) {
+        //     console.log(`Key down: ${event.key}`);
+        // });
+
+        //keyup listener
+        // body.addEventListener("keyup", function(event) {
+        //     console.log(`Key up: ${event.key}`);
+        // });
+        
+        //submit listener
+        const form = document.getElementById("myForm");
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); // prevent actual form submission
+           
+            console.log(`Form submitted with value: ${form.email.value}`);
+        });
+
+        //mouseover and mouseout listeners
+          let mouseDiv = document.querySelector(".mouse");
+         
+          mouseDiv.addEventListener("mouseover",function(){
+            console.log("Your cursor is over the div");
+         })
+            mouseDiv.addEventListener("mouseout",function(){
+                console.log("You removed cursor from the div")
+            })
+    </script>
+</body>
+</html>

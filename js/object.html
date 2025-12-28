@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Object</h1>
+    <script>
+        // var name = "Ganesh";
+        // var age = 22;
+        // var std = "BCA";
+        //Object Literal
+        var userData = { name: "Ganesh", age: 22, std: "BCA" }
+
+        // //Dot Notation
+        // console.log("Dot Notation", userData.name);
+
+        // //Bracket Notation
+        // console.log("Bracket Notation", userData["age"]);
+
+        // // Using new Object()
+        // var newObject = new Object();
+        // newObject.name = "Rahul";
+        // newObject.age = 23;
+        // newObject.std = "BCA";
+
+        // console.log("new Object", newObject)
+
+
+        // //Methods Inside Objects
+
+        // const obj = {
+        //     name: "Sohan",
+        //     age: 26,
+        //     sum: () => {
+        //         console.log("sum");
+        //         return 4 + 6
+        //     },
+
+        // }
+        // console.log("out of object", obj.sum());
+        // console.log("out of object", obj["sum"]());
+
+        // //Destructuring Objects
+
+        // const obj1={ name: "Ganesh", age: 22, std: "BCA" }
+
+        // // const {name,age,std}=obj1;
+        // // console.log(name);
+        // // console.log(age);
+        // // console.log(std);
+
+        // //this
+        const obj2 = {
+            name: "Sohan",
+            age: 26,
+
+            sum: function () {
+                console.log("this", this.name);
+                return ""
+            },
+
+        }
+        obj2.sum();
+
+
+        // const userData = [
+        //     { name: "Ganesh", age: 22, std: "BCA" },
+        //     { name: "Ganesh", age: 22, std: "BCA" },
+        //     { name: "Ganesh", age: 22, std: "BCA" },
+        //     { name: "Ganesh", age: 22, std: "BCA" },
+        //     { name: "Ganesh", age: 22, std: "BCA" },
+        //     { name: "Ganesh", age: 22, std: "BCA" },
+        //     { name: "Ganesh", age: 22, std: "BCA" },
+        //     { name: "Ganesh", age: 22, std: "BCA" },
+        //     { name: "Ganesh", age: 22, std: "BCA" },
+        //     { name: "Ganesh", age: 22, std: "BCA" },
+        //     { name: "Ganesh", age: 22, std: "BCA" },
+        //     { name: "Ganesh", age: 22, std: "BCA" },
+        //     { name: "Ganesh", age: 22, std: "BCA" }
+        // ];
+
+        // const users = {
+        //     student: false,
+
+            // studentData: [
+            //     { username: "arjun_k", age: 24, city: "Mumbai" },
+            //     { username: "neha_s", age: 28, city: "Pune" },
+            //     { username: "rahul_d", age: 31, city: "Delhi" },
+            //     { username: "priya_t", age: 26, city: "Hyderabad" },
+            //     { username: "vijay_r", age: 29, city: "Chennai" },
+            //     { username: "anita_p", age: 23, city: "Bengaluru" },
+            //     { username: "sandeep_m", age: 27, city: "Ahmedabad" },
+            //     { username: "manisha_j", age: 30, city: "Kolkata" },
+            //     { username: "rohit_v", age: 25, city: "Jaipur" }],
+           
+            //     teacherData: [
+            //     { username: "karishma_l", age: 32, city: "Surat" },
+            //     { username: "amit_b", age: 29, city: "Nagpur" },
+            //     { username: "tina_r", age: 22, city: "Lucknow" },
+            //     { username: "harsh_p", age: 27, city: "Indore" },
+            //     { username: "meena_d", age: 34, city: "Patna" },
+            //     { username: "alok_s", age: 28, city: "Bhopal" },
+            //     { username: "ruchi_k", age: 25, city: "Chandigarh" },
+            //     { username: "deepak_g", age: 33, city: "Coimbatore" },
+            //     { username: "kavita_m", age: 24, city: "Visakhapatnam" },
+            //     { username: "gaurav_h", age: 30, city: "Nashik" },
+            //     { username: "pooja_n", age: 26, city: "Vadodara" }
+          //  ]
+        //};
+
+        // users.map((event,key)=>{
+        //         console.log(key,event.username,event.age,event.city)
+        // });
+
+        // for (let i = 0; i < users.length; i++) {
+        //     console.log(users[i].username)
+        // }
+
+//  if (users.student==true) 
+//         {
+//             users.studentData.map((student) =>{ 
+                
+//               console.log(  student.username ,student.age,student.city)
+//             });
+            
+//         } 
+//         else {
+//            users.teacherData.map((student) =>{ 
+                
+//               console.log(  student.username ,student.age,student.city)
+//             });
+//         }
+
+let obj={
+    student:false,
+    
+    studentData:[ 
+                { username: "arjun_k", age: 24, city: "Mumbai" },
+                { username: "neha_s", age: 28, city: "Pune" },
+                { username: "rahul_d", age: 31, city: "Delhi" },
+                { username: "priya_t", age: 26, city: "Hyderabad" },
+                { username: "vijay_r", age: 29, city: "Chennai" },
+                { username: "anita_p", age: 23, city: "Bengaluru" },
+                { username: "sandeep_m", age: 27, city: "Ahmedabad" },
+                { username: "manisha_j", age: 30, city: "Kolkata" },
+                { username: "rohit_v", age: 25, city: "Jaipur" }],
+    teacherData: [
+                { username: "karishma_l", age: 32, city: "Surat" },
+                { username: "amit_b", age: 29, city: "Nagpur" },
+                { username: "tina_r", age: 22, city: "Lucknow" },
+                { username: "harsh_p", age: 27, city: "Indore" },
+                { username: "meena_d", age: 34, city: "Patna" },
+                { username: "alok_s", age: 28, city: "Bhopal" },
+                { username: "ruchi_k", age: 25, city: "Chandigarh" },
+                { username: "deepak_g", age: 33, city: "Coimbatore" },
+                { username: "kavita_m", age: 24, city: "Visakhapatnam" },
+                { username: "gaurav_h", age: 30, city: "Nashik" },
+                { username: "pooja_n", age: 26, city: "Vadodara" }
+           ]
+}
+
+if(obj.student){
+     obj.studentData.map((item)=>{
+        console.log(item.username,item.age,item.city);
+     })
+}else{
+    obj.teacherData.map((item)=>{
+        console.log(item.username,item.age,item.city)
+    })
+   
+}
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>String</h1>
+    <script>
+        // Template Literals
+
+        const name = "rahul";
+        let age = 56;
+        let home = "pune"
+        let full_name = `name:- ${name} , age:- ${age} , Home:- ${home}`
+        console.log(full_name)
+
+        //length
+        const length = "Hello  world";
+        console.log(length.length);
+
+        //toLowerCase() / toUpperCase()
+        const lower = "hello world"
+        const upper = "HELLO WORLD"
+        console.log(lower.toUpperCase());
+        console.log(upper.toLowerCase())
+
+        //trim()
+        const trim = '      hello world '
+        console.log(trim)
+        console.log(trim.trim());
+
+        //includes()
+        const includes = "hello world"
+        console.log(includes.includes('el'));
+
+        //indexOf() / lastIndexOf()
+        const index='hello world';
+        console.log(index.indexOf('e'));
+        console.log(index.lastIndexOf('l'));
+
+        //slice(start, end)
+        const slice='hello world';
+        console.log(slice.slice(2,6));
+
+        //replace() / replaceAll()
+        const replace="hello world";
+        console.log(replace.replace("world","universe"))
+        console.log(replace.replaceAll("l","p"));
+
+        // split(delimiter)
+        const split='hel,lo,world';
+        console.log(split.split(','))
+
+        //charAt(index) / charCodeAt(index)
+        const char='hello world';
+        console.log(char.charAt(1))
+        console.log(char.charCodeAt(2));
+
+        //startsWith() / endsWith()
+        const start='hello world';
+        console.log(start.startsWith('hek'));
+        console.log(start.endsWith('ab'));
+
+        //concat
+        const concat='hello';
+        console.log(concat.concat(" ","world"," ","1"))
+
+    </script>
+</body>
+
+</html>

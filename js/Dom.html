@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img{
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading-1">heading-1 <span style="display: none;">Hello world</span></h1>
+
+    <ul id="list">
+
+    </ul>
+    
+    <span class="ch"></span>
+    <span class="ch"></span>
+    <span class="ch"></span>
+    <span class="ch"></span>
+    <span class="ch"></span>
+
+
+    <img id="img">
+
+
+    <script>
+
+        const list = document.getElementById("list");
+        const newItem = document.createElement("li");
+    newItem.innerText = "Oranges"; 
+     list.appendChild(newItem);
+//Element Selection
+//document.getElementById('heading-1').innerText="hello world"
+
+// const cls=document.getElementsByClassName('ch');
+// cls[3].innerText="hello-1"
+
+// const tag=document.getElementsByTagName("span");
+// tag[0].innerText="hello"
+
+//  document.querySelector(".ch").innerText="hello3";
+
+//  const query= document.querySelectorAll(".ch")
+//  query[0].innerText="hello";
+//   console.log(query)
+
+
+// Content Manipulation
+
+const data=document.getElementById("heading-1");
+//data.innerText="hello world"
+
+console.log(data.textContent);  
+ console.log(data.innerText);
+
+//  data.innerHTML="<b>bold</b>"
+
+//  document.querySelector("ul").innerHTML="<li>Item1</li>"
+  
+
+//  Attribute Methods
+
+const img=document.getElementById("img");
+ img.setAttribute("src","./assets/download.jpg")
+ img.setAttribute("class","img");
+
+ const getAtt=img.getAttribute("class");
+
+ img.removeAttribute("class")
+ console.log(getAtt);
+  </script>
+</body>
+</html>

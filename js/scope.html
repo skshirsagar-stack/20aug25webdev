@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var globalVar = "globalvariable";
+        // function test() {
+        //     console.log("test",globalVar)
+        // }
+
+        // test();
+
+    // function test2() {
+
+    //     var localVar = "localvariable";
+    //     console.log("test", globalVar);
+
+    // }
+    //  test2()
+    // console.log("outside function", localVar); 
+
+    {
+        let blockVar = "blockvariable";
+        const blockVar2 = "blockvariable2";
+        var blockVar3 = "blockvariable3";
+        console.log("inside block", blockVar);
+    }
+    console.log("outside block", blockVar3); 
+   
+
+    </script>
+</body>
+
+</html>

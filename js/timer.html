@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Timer</h1>
+    <h2></h2>
+    <button onclick="closeI()">Close Interval</button>
+    <script>
+        document.querySelector("h2").innerText="hello h2"
+        // let a=0;
+        // //setTimeout
+        // setTimeout(() => {
+        //     console.log("hello.....");
+        // }, 5000);
+          
+        
+        // const fun1=()=>{
+        //     console.log("fun called");
+        // }
+        //    setTimeout(fun1,3000);
+
+        //    ///setInterval
+
+        //  const setI=setInterval(()=>{
+        //     console.log("setInterval..." ,a++);
+
+        //    },2000);
+
+        //    const closeI=()=>{
+            
+        //     clearInterval(setI)
+           
+        // }
+
+  const tasks = [
+            { no: 1, name: "Rupali", city:"mumbai" },
+            { no: 2, name: "Pragati", city: "Pune" },
+            { no: 3, name: "Nisha", city: "Banglore" },
+            { no: 4, name: "Ankita", city: "Chennai" },
+            { no: 5, name: "Sonal", city: "Delhi" },
+            { no: 6, name: "Neha", city: "Kolkata" },
+            { no: 7, name: "Rohan", city: "Hyderabad" },
+            { no: 8, name: "Rahul", city: "Jaipur" },
+            { no: 9, name: "Raj", city: "Lucknow" },
+            { no: 10, name: "Amit", city: "Ahmedabad" }
+        ];
+       
+          setTimeout(()=>{
+                    tasks.map(item => {
+                        console.log(item.name,item.city);
+                    });
+                },5000);
+      
+    </script>
+</body>
+
+</html>

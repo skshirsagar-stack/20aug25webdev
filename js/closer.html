@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function parent() {
+            var pname = "parent";
+
+            function child() {
+                let chname="child";
+                console.log("parent name", pname);
+            }
+            child();
+            console.log("child name",chname);
+        }
+
+     parent();
+    </script>
+</body>
+
+</html>

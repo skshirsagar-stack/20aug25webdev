@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Class</h1>
+  <script>
+    class Car {
+      constructor(brand, color, model) {
+        this.brand = brand;
+        this.color = color;
+        this.model = model;
+      }
+      mod(){
+        console.log(`${this.brand} is good car`);
+      }
+    }
+
+    //Create multiple car objects
+     const car1 = new Car("Toyota", "Red", "Corolla");
+     console.log("car1",car1);
+     car1.mod();
+
+     const car2 = new Car("Honda", "Blue", "Civic");
+     console.log("car2",car2)
+     car2.mod();
+    // const car3 = new Car("BMW", "Black", "X5");
+
+    const car={name:"Toyota",color:"red",model:"corolla"}
+     console.log(car);
+
+
+
+    class parent{
+      constructor(){
+        this.name="parent"
+      }
+    }
+
+    class chield extends parent{
+      constructor(){
+        super()
+        this.cName="chield";
+      }
+    }
+
+    const ch=new chield();
+
+    console.log(ch.name);
+
+
+
+  </script>
+</body>
+
+</html>

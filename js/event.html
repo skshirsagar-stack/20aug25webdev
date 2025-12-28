@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myButton">Click Me</button>
+    <input type="text" id="myInput" placeholder="Type something">
+    <select id="mySelect">
+        <option value="">-- choose --</option>
+        <option value="one">One</option>
+        <option value="two">Two</option>
+    </select>
+
+    <!-- Simple form to demonstrate submit event -->
+    <form id="myForm" novalidate>
+        <input type="text" id="formInput" name="name" placeholder="Type to submit">
+        <p id="error"></p>
+        <button type="submit">Submit Form</button>
+    </form>
+
+    <p id="output" style="font-family:monospace; white-space:pre-wrap;"></p>
+
+    <script>
+        const button = document.getElementById("myButton");
+        const input = document.getElementById("myInput");
+        const select = document.getElementById("mySelect");
+        const form = document.getElementById("myForm");
+        const formInput = document.getElementById("formInput");
+        const output = document.getElementById("output");
+       
+
+        // click listener
+        button.addEventListener("click", function() {
+            alert("Button was clicked!");
+        });
+
+        // mouseover / mouseout listeners
+        button.addEventListener("mouseover", function() {
+            console.log("Mouse is over the button");
+        });
+
+        button.addEventListener("mouseout", function() {
+            console.log("Mouse left the button");
+        });
+
+
+        // 'change' fires when the element loses focus (and value changed)
+        input.addEventListener("input", function() {
+            const msg = `input fired → value: "${input.value}"`;
+            console.log(msg);
+        });
+
+        // 'change' on a <select> fires immediately when selection changes
+        select.addEventListener("change", function() {
+            const msg = `select change fired → value: "${select.value}"`;
+            console.log(msg);
+            output.textContent = msg;
+        });
+
+        // submit listener: validate, prevent navigation and show value
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const value = formInput.value.trim();
+          const errorOutput = document.getElementById("error");
+            // simple validation: require non-empty name
+            if (!value) {   
+                output.textContent ="Please enter your name before submitting.";
+                output.style.color = 'crimson';
+                formInput.style.border = '2px solid crimson';
+                formInput.focus();
+                return;
+            }
+
+            // passed validation
+            const msg = `form submit intercepted → value: "${value}"`;
+            console.log(msg);
+            output.textContent = msg;
+            output.style.color = 'seagreen';
+            formInput.style.border = '';
+            // optionally clear the input after submit
+            // formInput.value = '';
+        });
+
+        // clear validation state as the user types
+        formInput.addEventListener('input', function() {
+            output.textContent = '';
+            output.style.color = '';
+            formInput.style.border = '';
+        });
+    document.addEventListener("keyup", function(event) {
+                        console.log(`Key "${event.key}" pressed  [event: keyup]`);
+    })
+        
+    </script>
+</body>
+</html>

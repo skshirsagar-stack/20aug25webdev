@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="index.js" defer></script>
+    <script src="index.js"></script>
 </head>
+
 <body>
-    <h1>Javascript</h1>
+    <h1>Javscript</h1>
+
+    <button onclick="alert('hello world')">Click here</button>
+
+    <script>
+       var globleVar=100;
+
+
+        console.log("hello world :- in internal");
+        //var
+        var name = 35;
+        var name = "john";
+        console.log("name :-", name);
+        //let
+
+        let number = "john";
+        number = 45;
+        console.log("number :-", number);
+        //const
+        const a = true;
+
+        console.log("a :-", a);
+
+
+{
+    var t=7
+}
+console.log("var scope :-",t);
+
+
+{
+    let u=9
+    console.log("let scope inside block:-",u);
+}
+console.log("let scope :-",u); //error
+
+
+{
+    const v=11
+    console.log("const scope inside block:-",v);
+}
+console.log("const scope:-",v); //error
+
+    </script>
 </body>
+
 </html>

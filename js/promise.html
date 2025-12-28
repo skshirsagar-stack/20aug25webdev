@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Promise</h1>
+    <script>
+        // console.log("before");
+
+        // setTimeout(() => {
+        //     console.log("callback")
+        // }, 4000)
+
+        // console.log("after");
+
+
+        // var promise = new Promise((resolve, reject) => {
+        //     var data = false
+        //     if (data) {
+        //         resolve("resolve");
+        //     }
+        //     else {
+        //         reject("reject");
+        //     }
+        // });
+
+        // promise.then((message)=>{
+        //     console.log("promise",message);
+        // }).catch((err)=>{
+        //     console.log(err);
+        // })
+
+//    var promise=new Promise((resolve,reject)=>{
+//    setTimeout(()=>{
+//     //    resolve("Resolve");
+//        reject("reject");
+//    },5000)
+//    })
+
+//    promise.then((message)=>{
+//       console.log("promise",message);
+//    }).catch((err)=>{
+//     console.log("promise",err)
+//    })
+
+
+
+async function getData() {
+  let res = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+  //console.log("res",res);
+
+
+  let data = await res.json();
+  
+  
+  console.log(data);
+}
+getData()
+
+    </script>
+</body>
+
+</html

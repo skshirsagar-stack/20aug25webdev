@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myForm {
+            margin: 0px auto;
+
+            padding: 10px;
+            border: 1px solid black;
+            display: inline-block;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        #myForm input {
+            display: block;
+            margin: 5px 0;
+            padding: 8px;
+            width: 90%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #myForm button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="myForm" novalidate>
+        <p id="message"></p>
+        <input type="text" id="formInput" name="name" placeholder="Enter Name"><br />
+        <input type="email" name="email" placeholder="Email"><br />
+        <input type="password" name="password" placeholder="Password"><br />
+        <button type="submit">Submit Form</button>
+    </form>
+    <script>
+        const form = document.getElementById("myForm");
+        const message = document.getElementById("message");
+        form.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            const name = form.name.value;
+            const email = form.email.value;
+            const password = form.password.value;
+            if (!name) {
+                message.textContent = "Name is required";
+                message.style.color = "red";
+                return;
+            } else if (!email) {
+                message.textContent = "Email is required";
+                message.style.color = "red";
+                return;
+            } else if (!password) {
+                message.textContent = "Password is required";
+                message.style.color = "red";
+                return;
+            }
+            console.log(`Name: ${name}, Email: ${email}, Password: ${password}`);
+            message.textContent = "Form submitted successfully!";
+            message.style.color = "green";
+        });
+
+
+
+    </script>
+</body>
+
+</html>
